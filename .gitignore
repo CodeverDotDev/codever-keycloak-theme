@@ -1,0 +1,19 @@
+#Eclipse related
+.settings
+.project
+
+#Intellij related
+**/*.iml
+.idea
+
+
+### macOS ###
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+#Exclude target folders
+**/target/
+
+#Exclude generated files
+**/MANIFEST.MF
