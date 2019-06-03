@@ -15,8 +15,8 @@
  * limitations under the License.
  */
 
-#kc-logo-wrapper {
-    background: url("../img/bookmarks.dev-keycloak.logo.png") no-repeat top right;
+.navbar-title {
+    background: url('../img/bookmarks.dev-keycloak.logo.png') no-repeat;
     height: 50px;
-    width: 200px;
+    width: 155px;
 }
