@@ -1,10 +1,10 @@
 <html>
 <body>
-${msg("emailVerificationWelcomeHtml")}
-${msg("emailVerificationClickLinkHtml",link, linkExpiration)}
-${msg("emailVerificationTipHtml")}
-${msg("emailVerificationSincerelyHtml")}
-${msg("emailVerificationPsHtml")}
+${kcSanitize(msg("emailVerificationWelcomeHtml"))?no_esc}
+${kcSanitize(msg("emailVerificationClickLinkHtml",link,  linkExpirationFormatter(linkExpiration)))?no_esc}
+${kcSanitize(msg("emailVerificationTipHtml"))?no_esc}
+${kcSanitize(msg("emailVerificationSincerelyHtml"))?no_esc}
+${kcSanitize(msg("emailVerificationPsHtml"))?no_esc}
 </body>
 <footer>
     <div style="display:flex;justify-content: center;margin-top: 3rem;">

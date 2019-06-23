@@ -9,7 +9,16 @@ You can either deploy the themes by copying to the themes folder or as modules.
 ### Copy
 
 Simplest way to deploy the themes is to copy `src/main/resources/theme/*` to `themes/`.
+(locally `cp -Rv bookmarks /opt/keycloak/themes/`)
 
+For example
+```
+$ cd /Users/ama/projects/codingpedia-bookmarks/bookmarks-keycloak-themes/src/main/resources/theme
+$ zip -r bookmarks.zip bookmarks/
+$ scp bookmarks.zip ama@x.x.x.x:~/uploads
+```
+
+or put them all in an alias like `bookmarks-keycloak-theme-take-to-production`
 ### Module
 
 Alternatively you can deploy as modules. This can be done by first running:

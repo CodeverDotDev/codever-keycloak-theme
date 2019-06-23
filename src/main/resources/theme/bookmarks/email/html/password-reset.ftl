@@ -1,8 +1,8 @@
 <html>
 <body>
-${msg("passwordResetBodyFirstSentenceHtml")}
-${msg("passwordResetBodyClickLinkHtml",linkExpiration, link )}
-${msg("passwordResetBodyIgnoreMessageHtml")}
+${kcSanitize(msg("passwordResetBodyFirstSentenceHtml"))?no_esc}
+${kcSanitize(msg("passwordResetBodyClickLinkHtml",linkExpirationFormatter(linkExpiration), link ))?no_esc}
+${kcSanitize(msg("passwordResetBodyIgnoreMessageHtml"))?no_esc}
 </body>
 <footer>
     <div style="display:flex;justify-content: center;margin-top: 3rem;">
